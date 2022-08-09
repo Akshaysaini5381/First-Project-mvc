@@ -1,0 +1,26 @@
+﻿@model List<First_Project.Models.Class1>
+@{
+    ViewBag.Title = "About";
+}<br />
+
+<h2>type 2 </h2>
+<table class=" table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Phone</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.City</td>
+            <td>@item.Phone</td>
+        </tr>
+    }
+</table>

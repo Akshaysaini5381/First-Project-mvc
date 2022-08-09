@@ -1,0 +1,26 @@
+﻿@model List< First_Project.db.firstTable>
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<h1>Type 1</h1><br />
+<h3> My Table Akshay Saini :</h3>
+<table class=" table table-bordered table-responsive table-hover active"  >
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Phone</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.City</td>
+            <td>@item.Phone</td>
+        </tr>
+    }
+</table>
